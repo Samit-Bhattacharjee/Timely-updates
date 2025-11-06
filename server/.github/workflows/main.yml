@@ -1,4 +1,4 @@
-name: Run Checks
+name: Running Checks on Backend
 
 on:
   push:
