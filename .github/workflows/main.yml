@@ -37,10 +37,10 @@ jobs:
         working-directory: client
         run: pnpm install --frozen-lockfile
 
-      - name: Build Frontend
-        working-directory: server
-        run: pnpm build --if-present
-
       - name: Build Backend
-        working-directory: backend
+        working-directory: server
+        run: pnpm build
+
+      - name: Build Frontend
+        working-directory: client
         run: pnpm build --if-present
