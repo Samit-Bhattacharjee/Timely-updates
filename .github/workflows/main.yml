@@ -1,4 +1,4 @@
-name: Running checks on Frontend
+name: Running checks on both repos
 
 on:
   push:
