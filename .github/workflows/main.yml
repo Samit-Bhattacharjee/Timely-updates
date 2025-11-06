@@ -26,9 +26,6 @@ jobs:
           version: 9
           run_install: false
 
-      - name: Check pnpm version
-        run: pnpm --version
-
       - name: Install backend dependencies
         working-directory: server
         run: pnpm install --frozen-lockfile
@@ -43,4 +40,4 @@ jobs:
 
       - name: Build Frontend
         working-directory: client
-        run: pnpm build --if-present
+        run: pnpm build
