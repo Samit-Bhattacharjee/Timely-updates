@@ -167,7 +167,7 @@ export function Dashboard() {
                 <div className="text-4xl font-mono font-bold text-slate-900 my-4">{formatTime(currentTime)}</div>
                 <CardDescription className="flex items-center justify-center space-x-2">
                   <MapPin className="w-4 h-4" />
-                  <span>Office - Main Building</span>
+                  <span>Office - Main Building jkabdjwqvdwdcy2dfy2 gftywdfyt</span>
                 </CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4">
