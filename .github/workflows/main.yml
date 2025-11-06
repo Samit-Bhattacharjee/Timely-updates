@@ -1,4 +1,4 @@
-name: Running checks on both repos
+name: CI/CD
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   run-checks:
-    name: Linting and Building Project
+    name: Setup and Building Project
     runs-on: ubuntu-latest
 
     steps:
