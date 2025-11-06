@@ -39,7 +39,7 @@ jobs:
 
       - name: Run ESLint
         working-directory: client
-        run: pnpm lint --if-present
+        run: pnpm lint
 
       - name: Build Frontend
         working-directory: server
