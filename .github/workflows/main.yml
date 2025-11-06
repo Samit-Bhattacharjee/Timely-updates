@@ -2,7 +2,7 @@ name: Running checks on both repos
 
 on:
   push:
-    branches: [ main, feature/**, feat/** ]
+    branches: [ main, feat/**, fix/** ]
   pull_request:
     branches: [ main ]
 
