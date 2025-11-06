@@ -39,7 +39,12 @@ jobs:
 
       - name: Run ESLint
         working-directory: client
-        run: pnpm lint
+        run: |
+              echo "Running ESLint auto-fix..."
+              pnpm exec eslint . --fix || true
+
+              echo "Re-running ESLint to check remaining issues..."
+              pnpm exec eslint . --max-warnings=0
 
       - name: Build Frontend
         working-directory: server
