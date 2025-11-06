@@ -30,19 +30,19 @@ jobs:
         run: pnpm --version
 
       - name: Install backend dependencies
-        working-directory: backend
+        working-directory: server
         run: pnpm install --frozen-lockfile
 
       - name: Install frontend dependencies
-        working-directory: frontend
+        working-directory: client
         run: pnpm install --frozen-lockfile
 
       - name: Run ESLint
-        working-directory: frontend
+        working-directory: client
         run: pnpm lint --if-present
 
       - name: Build Frontend
-        working-directory: frontend
+        working-directory: server
         run: pnpm build --if-present
 
       - name: Build Backend
